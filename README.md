@@ -10,7 +10,7 @@
    bash app/data/example4.bash
 6. Результат выполнения скрипта на скриншоте "Снимок экрана от 2024-02-08 21-59-05_1"
 Коментарий. К сожалению не получилось автоматизировать запуск баш скрипта, образ контейнера не хочет пересобираться :
-   docker build -t humble-desktop-prepaired                  
+   docker build . -t humble-desktop-prepaired                  
    ERROR: "docker buildx build" requires exactly 1 argument.
    See 'docker buildx build --help'.
 
