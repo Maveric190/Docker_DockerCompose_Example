@@ -19,5 +19,9 @@ RUN echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc \
     && echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc \
     && echo "export TURTLEBOT3_MODEL=waffle" >> ~/.bashrc
 
+# Зададим рабочую директорию
+WORKDIR /app/data
+
 # Зададим стартовую команду для контейнера
-CMD ["bash"]
+#CMD ["bash"]
+CMD ["bash", "./timer.bash"]
